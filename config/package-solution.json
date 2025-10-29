@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "project-management-hub-client-side-solution",
+    "id": "8429a28e-b790-4ed5-aba6-da8464324061",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ProjectManagementHub description"
+      },
+      "longDescription": {
+        "default": "ProjectManagementHub description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "project-management-hub Feature",
+        "description": "The feature that activates elements of the project-management-hub solution.",
+        "id": "a719faba-ae4f-4f8c-b3e3-a7b45e5a8707",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/project-management-hub.sppkg"
+  }
+}

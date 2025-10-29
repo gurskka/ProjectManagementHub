@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.19.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "project-management-hub",
+    "libraryId": "8429a28e-b790-4ed5-aba6-da8464324061",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ProjectManagementHub",
+    "solutionShortDescription": "ProjectManagementHub description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,248 @@
+:root {
+  --color-primary: #4b0082;
+  --color-accent: #5603ad;
+  --color-light-gray: #e5e7eb;
+  --color-dark-gray: #666;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.cards-stack {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.projects-list {
+  margin-top: 40px;
+}
+
+.projects-list-title {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.project-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.hoverable-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hoverable-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+}
+
+.card.active {
+  transform: scale(1.05);
+  border-bottom: 4px solid var(--color-accent);
+}
+
+.card-text-large {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.card-text-xxLarge {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.project-item {
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-left: 6px solid gray;
+}
+
+.project-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.project-info {
+  font-size: 13px;
+  color: var(--color-dark-gray);
+}
+
+.no-projects {
+  margin-top: 10px;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.project-dates {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: var(--color-dark-gray);
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.project-title {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.project-description {
+  margin: 10px 0;
+  color: #444;
+  font-size: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-card {
+  background: #fff;
+  border-bottom: 4px solid var(--color-accent);
+  border-radius: 12px;
+  padding: 15px 20px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card .info-title {
+  font-weight: 600;
+}
+
+.info-card .info-value {
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.tasks-container h4,
+.documents-container h4 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.tasks-container ul,
+.documents-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.document-item {
+  flex: 1 1 200px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.document-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.2);
+}
+
+.task-item {
+  width: 100%;
+  flex: none;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.3s,
+    background-color 0.3s;
+  cursor: pointer;
+  border-left: 6px solid transparent;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.2);
+}
+
+.task-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.task-due-date {
+  font-size: 13px;
+  color: var(--color-dark-gray);
+}
+
+.assigned-users {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.task-status {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.back-button {
+  cursor: pointer;
+  color: #4b0082;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #7c3aed;
+  text-decoration: underline;
+}
