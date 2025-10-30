@@ -12,11 +12,11 @@ import {
   IProjectManagementHubProps,
   MessageStatus,
 } from "./IProjectManagementHubProps";
-import { ProjectsList } from "./projectManagmentComponents/ProjectsList";
-import { TasksList } from "./projectManagmentComponents/TasksList";
+import { ProjectsList } from "./projectManagmentComponents/projects/ProjectsList";
+import { TasksList } from "./projectManagmentComponents/tasks/TasksList";
 import { RootStore } from "./RootStore";
-import { DocumentsList } from "./projectManagmentComponents/DocumentsList";
-import { Dashboard } from "./projectManagmentComponents/Dashboard";
+import { DocumentsList } from "./projectManagmentComponents/documents/DocumentsList";
+import { Dashboard } from "./projectManagmentComponents/dashboard/Dashboard";
 
 const classNames = mergeStyleSets({
   floatingMessageBar: {

@@ -8,7 +8,7 @@ import {
   Text,
   Modal,
 } from "@fluentui/react";
-import { Document } from "../projectManagmentStores/Document";
+import { Document } from "../../projectManagmentStores/Document";
 
 export const UpdateDocumentModal = observer(
   ({ store }: { store: Document }) => {

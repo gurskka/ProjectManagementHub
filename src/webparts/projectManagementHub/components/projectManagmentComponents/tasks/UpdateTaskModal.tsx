@@ -14,8 +14,8 @@ import {
   NormalPeoplePicker,
   Label,
 } from "@fluentui/react";
-import { Task } from "../projectManagmentStores/Task";
-import { TaskStatus } from "../IProjectManagementHubProps";
+import { Task } from "../../projectManagmentStores/Task";
+import { TaskStatus } from "../../IProjectManagementHubProps";
 
 const modalStyles = mergeStyleSets({
   modal: { display: "flex", alignItems: "center", justifyContent: "center" },

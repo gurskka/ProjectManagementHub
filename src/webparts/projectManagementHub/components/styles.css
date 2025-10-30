@@ -1,6 +1,6 @@
 :root {
   --color-primary: #4b0082;
-  --color-accent: #5603ad;
+  --color-accent: #000;
   --color-light-gray: #e5e7eb;
   --color-dark-gray: #666;
 }
@@ -39,18 +39,20 @@
   text-align: center;
   cursor: pointer;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(97, 97, 97, 0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .hoverable-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 4px 10px rgba(97, 97, 97, 0.4);
 }
 
 .card.active {
   transform: scale(1.05);
-  border-bottom: 4px solid var(--color-accent);
+  box-shadow: 0 0 12px rgba(97, 97, 97, 0.4);
+  outline: 2px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 0;
 }
 
 .card-text-large {
@@ -63,11 +65,15 @@
   font-size: 2rem;
 }
 
+.white-text {
+  color: white;
+}
+
 .project-item {
   margin-bottom: 12px;
   padding: 14px 18px;
   border-radius: 8px;
-  background: #fff !important;
+  background: rgba(124, 58, 237, 0.03);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: space-between;
@@ -79,7 +85,6 @@
 
 .project-item:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
 }
 
 .project-name {
@@ -134,10 +139,14 @@
   background: #fff;
   border-bottom: 4px solid var(--color-accent);
   border-radius: 12px;
-  padding: 15px 20px;
+  padding: 12px 16px;
   flex: 1;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 0 8px rgba(97, 97, 97, 0.3);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  outline-offset: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .info-card .info-title {
@@ -166,21 +175,33 @@
 }
 
 .document-item {
-  flex: 1 1 200px;
-  padding: 14px 18px;
+  flex: 0 0 200px;
+  padding: 14px;
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
 
 .document-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.document-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.document-item span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .task-item {
@@ -188,7 +209,7 @@
   flex: none;
   padding: 14px 18px;
   border-radius: 12px;
-  background: #fff;
+  background: rgba(124, 58, 237, 0.03);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: space-between;
@@ -203,7 +224,6 @@
 
 .task-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(124, 58, 237, 0.2);
 }
 
 .task-title {

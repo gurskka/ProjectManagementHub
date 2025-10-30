@@ -11,8 +11,8 @@ import {
   Modal,
   mergeStyleSets,
 } from "@fluentui/react";
-import { Project } from "../projectManagmentStores/Project";
-import { ProjectStatus } from "../IProjectManagementHubProps";
+import { Project } from "../../projectManagmentStores/Project";
+import { ProjectStatus } from "../../IProjectManagementHubProps";
 
 const modalStyles = mergeStyleSets({
   modal: { display: "flex", alignItems: "center", justifyContent: "center" },

@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "project-management-hub-client-side-solution",
+    "name": "ECM4D Project Management Hub (Eva)",
     "id": "8429a28e-b790-4ed5-aba6-da8464324061",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,

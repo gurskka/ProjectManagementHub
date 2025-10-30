@@ -10,7 +10,7 @@ import {
   SelectionMode,
   Dropdown,
 } from "@fluentui/react";
-import { NewDocumentStore } from "../projectManagmentStores/NewDocumentStore";
+import { NewDocumentStore } from "../../projectManagmentStores/NewDocumentStore";
 import { AddDocumentModal } from "./AddDocumentModal";
 import { UpdateDocumentModal } from "./UpdateDocumentModal";
 

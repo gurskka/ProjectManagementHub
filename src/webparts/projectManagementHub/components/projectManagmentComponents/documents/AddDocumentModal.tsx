@@ -9,7 +9,7 @@ import {
   Modal,
   TextField,
 } from "@fluentui/react";
-import { NewDocumentStore } from "../projectManagmentStores/NewDocumentStore";
+import { NewDocumentStore } from "../../projectManagmentStores/NewDocumentStore";
 
 export const AddDocumentModal = observer(
   ({ newDocumentStore }: { newDocumentStore: NewDocumentStore }) => {

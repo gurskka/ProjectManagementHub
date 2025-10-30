@@ -11,8 +11,7 @@ import {
   IDropdownOption,
   Dropdown,
 } from "@fluentui/react";
-import { NewTaskStore } from "../projectManagmentStores/NewTaskStore";
-
+import { NewTaskStore } from "../../projectManagmentStores/NewTaskStore";
 import { AddTaskModal } from "./AddTaskModal";
 import { UpdateTaskModal } from "./UpdateTaskModal";
 

@@ -9,7 +9,7 @@ import {
   ShimmeredDetailsList,
   SelectionMode,
 } from "@fluentui/react";
-import { NewProjectStore } from "../projectManagmentStores/NewProjectStore";
+import { NewProjectStore } from "../../projectManagmentStores/NewProjectStore";
 import { AddProjectModal } from "./AddProjectModal";
 import { UpdateProjectModal } from "./UpdateProjectModal";
 
